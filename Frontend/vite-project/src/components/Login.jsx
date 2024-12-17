@@ -14,7 +14,7 @@ function Login({ onAuthSuccess }) {
         setLoading(true);
 
         try {
-            const response = await axios.post('https://foodclub-three.vercel.app/user/login', formData);
+            const response = await axios.post('https://foodclub-backend.vercel.app/user/login', formData);
             setMessage(response.data.message);
 
             if (response.status === 200) {
