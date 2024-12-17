@@ -14,7 +14,7 @@ function Signup({ onAuthSuccess }) {
         setLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:3000/user/signup', formData);
+            const response = await axios.post('https://foodclub-three.vercel.app/user/signup', formData);
             setMessage(response.data.message);
 
             if (response.status === 201) {
